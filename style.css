@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f4f4f4;
-  color: #333;
+  color: #1E90FF;
 }
 
 /* Header / Navigation */
@@ -146,4 +146,5 @@ footer {
   background-color: #2c5f2d;
   color: white;
 }
+
 
