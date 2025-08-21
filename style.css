@@ -43,11 +43,13 @@ nav .nav-links a:hover {
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  color: #87CEEB;
 }
 
 .hero p {
   font-size: 1.2em;
   margin-bottom: 1.5em;
+  color: #87CEEB;
 }
 
 .hero .btn {
@@ -110,3 +112,4 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+
