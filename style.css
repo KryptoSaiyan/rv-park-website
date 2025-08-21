@@ -3,13 +3,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #1E90FF;
+  background: #f8fbff;   /* very light blue background */
+  color: #333;           /* keep body text dark for readability */
 }
 
 /* Header / Navigation */
 header {
-  background: #38bdf8;
+  background: #1E90FF;   /* DodgerBlue */
   padding: 1em 2em;
 }
 
@@ -30,10 +30,11 @@ nav .nav-links a {
   text-decoration: none;
   margin-left: 15px;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav .nav-links a:hover {
-  text-decoration: underline;
+  color: #87CEEB; /* SkyBlue hover effect */
 }
 
 /* Hero Section */
@@ -49,6 +50,7 @@ nav .nav-links a:hover {
 .hero h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 .hero p {
@@ -57,16 +59,18 @@ nav .nav-links a:hover {
 }
 
 .hero .btn {
-  background-color: #87ceeb;
-  color: white;
+  background-color: #87CEEB;  /* SkyBlue button */
+  color: #003366;             /* Dark navy text */
   padding: 12px 25px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .hero .btn:hover {
-  background-color: #4682b4;
+  background-color: #1E90FF;  /* DodgerBlue hover */
+  color: white;
 }
 
 /* Features Section */
@@ -78,6 +82,7 @@ nav .nav-links a:hover {
 .features h2 {
   font-size: 2em;
   margin-bottom: 40px;
+  color: #1E90FF;
 }
 
 .cards {
@@ -91,9 +96,14 @@ nav .nav-links a:hover {
   background: white;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   padding-bottom: 20px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -104,6 +114,7 @@ nav .nav-links a:hover {
 
 .card h3 {
   margin: 15px 0 10px 0;
+  color: #003366;  /* Navy for headings */
 }
 
 .card p {
@@ -114,13 +125,14 @@ nav .nav-links a:hover {
 
 /* Footer */
 footer {
-  background: #2c5f2d;
+  background: #003366;   /* Dark navy */
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 30px;
 }
 
+/* Page Content */
 .page-content {
   max-width: 800px;
   margin: 40px auto;
@@ -130,6 +142,13 @@ footer {
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
+.page-content h1, 
+.page-content h2, 
+.page-content h3 {
+  color: #1E90FF;
+}
+
+/* Rates Table */
 .rates-table {
   width: 100%;
   border-collapse: collapse;
@@ -143,8 +162,10 @@ footer {
 }
 
 .rates-table th {
-  background-color: #2c5f2d;
+  background-color: #1E90FF;
   color: white;
 }
 
-
+.rates-table tr:nth-child(even) {
+  background: #f0f8ff; /* very light blue for striping */
+}
